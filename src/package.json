@@ -4,8 +4,14 @@
   "description": "Simple demo application for teaching TypeScript",
   "author": "Jess Chadwick",
   "license": "ISC",
+  "scripts": {
+    "start": "./node_modules/.bin/live-server"
+  },
   "dependencies": {
-      "bootstrap": "^3.3.6",
-      "jquery": "^2.2.0"
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.0"
+  },
+  "devDependencies": {
+    "live-server": "^0.9.1"
   }
 }
