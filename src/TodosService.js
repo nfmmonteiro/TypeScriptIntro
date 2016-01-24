@@ -35,7 +35,7 @@ var TodosService = (function () {
         this._todos.push(newTodo);
         
         return newTodo;
-    }
+    };
 
     TodosService.prototype.clearCompleted = function () {
         
@@ -43,15 +43,15 @@ var TodosService = (function () {
             return !todo.completed;
         })
         
-    }
+    };
 
     TodosService.prototype.get = function (todoId) {
         return clone(this._find(todoId));
-    }
+    };
 
     TodosService.prototype.getAll = function () {
         return clone(this._todos);
-    }
+    };
 
     TodosService.prototype.toggleCompleted = function (todoId) {
         var todo = this._find(todoId);
@@ -60,7 +60,7 @@ var TodosService = (function () {
             return null;
 
         return todo.completed = !todo.completed;
-    }
+    };
 
 
     // "Private" method (but not really)
@@ -70,7 +70,7 @@ var TodosService = (function () {
         });
 
         return filtered.length ? filtered[0] : null;
-    }
+    };
 
 
     // Same type goes in and comes out, 
